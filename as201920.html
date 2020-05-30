@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head >
+        <Title>PCTO - a.s. 2019/20</Title>
+        <link href="layout_sito_pcto.css" rel="stylesheet">
+    </head>
+<body>
+<div id="container">
+    <div id="header">
+        <img src="PCTO_logo.png" width="150px" height="75px">
+        <p class="move1"><font class="color1">PERCORSI</font> PER LE<br>
+        <font class="color2">COMPETENZE</font><font class="color3">&nbsp;TRASVERSALI</font>
+        <br>E PER L'<font class="color4">ORIENTAMENTO</font></p>
+        <p class="move2"><a href="sito_pcto.html" class="internal_link">Home</a></p>
+        <p class="move3"><a href="as201718.html" class="internal_link">a.s. 2017/18</a></p>
+        <P class="move4"><a href="as201819.html" class="internal_link">a.s. 2018/19</a></P>
+        <P class="move5"><a href="as201920.html" class="internal_link">a.s. 2019/20</a></P>
+        <P class="move6"><a href="cittadinanza.html" class="internal_link">
+            <img src="logo_cittadinanza_e_costituzione.jpg" widht="100px" height="60px"></a></P>
+    </div>
+    <div id="content">
+    <h1 class="main_title">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        PLS di Elettromagnetismo</h1>
+        <p class="move21">Durante l’a.s. 2019/20 ho avuto modo di svolgere un percorso analogo di PLS, sempre presso l’Università di Palermo (Dipartimento di 
+        Chimica e Fisica), tenuto dal prof. Claudio Fazio, il cui oggetto principale era lo studio laboratoriale di alcuni fenomeni
+        elettromagnetici. L’obiettivo degli incontri è stato quello di determinare i valori effettivi
+        di determinati strumenti, che si discostano sempre dal valore nominale a causa di errori 
+        <u><dfn title="Errori non prevedibili causati dall'inesattezza della misurazione umana">casuali</dfn></u> e 
+        <u><dfn title="Errore intrinseco dello strumento di misurazione">sistematici</dfn></u>.
+        Questo è stato possibile attraverso una serie di esperimenti ripetuti e trascritti
+        nell’apposito <u><dfn title="Software che consente l'applicazione di modelli matematici ai risultati empirici ottenuti dalla sperimentazione">
+            programma di "fitting"</dfn></u> <a href="https://www.vernier.com/product/logger-pro-3/" target="_blank">LoggerPro</a>. 
+        In particolare, abbiamo analizzato il classico <u><dfn title="Circuito elettrico costituito da un generatore di tensione continua, un resistore e un condensatore">
+        circuito RC</dfn></u>, per determinare il valore effettivo della capacità del condensatore.
+        Per farlo, abbiamo ripetuto il processo della sua carica e scarica per 3 volte con 6 diversi resistori. </p>
+        <div class="move22"><img src="circuito_RC.jpg" width="330px" height="160px" title="Circuito RC"></div>
+        <a href="generatore.jpg" target="_blank"><div class="move23"></div></a>
+        <a href="resistore.jpg" target="_blank"><div class="move24"></div></a>
+        <a href="condensatore.jpg" target="_blank"><div class="move25"></div></a>
+        <a href="multimetro.jpg" target="_blank"><div class="move26"></div></a>
+        <div class="move27"><img src="logger_pro.jpg" title="Le fasi di carica e scarica del condensatore modellate dal software LoggerPro"
+            width="300px" height="200px"></div>
+        <div class="move28"><h2 class="main_title">Fase di carica</h2><p><ul>
+            <li>La corrente erogata dal generatore fa sì che della carica q si accumuli sulla piastra del condensatore:<br>
+              <dfn class="formula">q = C x Vs x (1 – e<small><sup>-t/RC</sup></small>)</dfn></li>
+            <li>L’accumulo di carica rende più difficile l’erogazione della corrente: &nbsp;&nbsp;
+                <dfn class="formula">I = (Vs/R) x e<small><sup>-t/RC</sup></small></dfn></li>
+            <li>La tensione ai capi del condensatore cresce proporzionalmente all’accumulo di carica, fino a raggiungere
+                (teoricamente a t = ∞, praticamente a t ≥ 5RC) il valore massimo, pari alla tensione fornita dal generatore (Vs):&nbsp;&nbsp;
+                <dfn class="formula">Vc = Vs x (1 – e<small><sup>-t/RC</sup></small>)</dfn></li>
+        </ul></p></div>
+        <div class="move31"><ul>
+            <li>La tensione ai capi del resistore, espressa dalla 
+                <u><dfn title="Detta anche 'legge delle maglie', afferma che la somma delle tensioni di tutte le maglie del circuito è nulla">seconda legge di Kirchhoff</dfn></u> (Vr = Vs-Vc),
+                al tendere di Vc a Vs tende a 0, con andamento esponenziale: &nbsp;&nbsp;
+                <dfn class="formula">Vr = Vs x e<small><sup>-t/RC</sup></small></dfn></li>
+        </ul></div>
+        <div class="move29"><h2 class="main_title">Fase di scarica</h2><p><ul>
+            <li>Durante la fase di scarica, il condensatore si comporta similmente a un generatore di tensione. La tensione ai suoi capi,
+                inizialmente massima, tende a 0: &nbsp;&nbsp;
+              <dfn class="formula"> Vc = Vs x e<small><sup>-t/RC</sup></small></dfn></li>
+              <li>La tensione ai capi del resistore, espressa tramite la seconda legge di Kirchoff (Vr = Vc), decresce di pari passo con Vc: &nbsp;&nbsp;
+            <dfn class="formula">Vr = Vc = Vs x e<small><sup>-t/RC</sup></small></dfn>
+            </li>
+            <li>La carica che si era accumulata sulle piastre del condensatore (q = C x Vc), tende a 0 al tendere a 0 di Vc:<br>
+                <dfn class="formula">q = C x Vs x e<small><sup>-t/RC</sup></small></dfn>
+           </li>
+        </ul></p></div>
+        <div class="move32"><ul>
+            <li>L’intensità di corrente, il cui valore è determinato dalla
+                <u><dfn title="È la legge che mette in relazione differenza di potenziale, intensità di corrente e caduta di tensione ai capi di un resistore: ΔV = R x i">
+                    prima legge di Ohm</dfn></u> (I = Vc/R), decresce al tendere a 0 di Vc: &nbsp;&nbsp;
+                <dfn class="formula">I = (Vs x e<small><sup>-t/RC</sup></small>)/R</dfn>
+             </li>
+        </ul></div>
+        <div class="move30"><p><img src="carica.png" width="330px" height="170px"
+            title="Grafici di tensione e corrente nel tempo durante la fase di carica">&nbsp;&nbsp;&nbsp;&nbsp;
+            <img src="scarica.png" width="330px" height="170px" title="Grafici di tensione e corrente nel tempo durante la fase di scarica">
+        </p></div>
+    </div>
+    <div id="footer">
+        <p class="move8"><i>All rights reserved</i>. Questo sito è stato realizzato in ogni sua parte da: <b>Giampiero Zarzana</b>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a class="profile" href="https://www.instagram.com/giampieroconlaemme/?hl=it" target="_blank">
+                <img src="logo_ig.jpg" width=20px height=20px class="img_profile">
+                &nbsp;&nbsp;@giampieroconlaemme</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a class="profile" href="https://it-it.facebook.com/giampiero.zarzana" target="_blank"><img src="logo_fb.png" width=20px height=20px class="img_profile">
+            &nbsp;&nbsp;Giampiero Zarzana</a>
+            <br>
+        Colloquio orale di maturità, a.s. 2019/20 - VG, Liceo Scientifico M. Cipolla - Castelvetrano (TP)</p>
+    </div>
+</div>
+</body>
+</html>
